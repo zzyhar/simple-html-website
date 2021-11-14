@@ -1,29 +1,39 @@
 /* Styling applied to all elements on the page */
 * {
-  /* ! what is margin ? */
+  /* make no space around*/
   margin: 0;
-  /* ! what is padding? */
+  /* make padding for all 4 sides 0*/
   padding: 0;
 }
 
 /* Header styling */
 .header {
-  /* ! what is this? */
+  /* The min height of element */
   min-height: 100vh;
 
-  /* ! what is this? */
+  /*create block element with will fill the space*/
   width: 100%;
 
-  /* ! what is this? */
+  /* including background image of the frontside of the website */
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(images/banner.png);
 
-  /* ! what is this? */
+  /* to spot that image of the front page located in the center of the website */
   background-position: center;
 
-  /* ! what is this? */
+  /*stretch the image on all empty space */
   background-size: cover;
 
-  /* ! what is this? */
+  /* make the image next to its closest relative*/
   position: relative;
+}
+nav {
+  /* make container flexible for changes */
+  display: flex;
+  /* making pading aroung list items (top & bottom 2% and right & left 6%) */
+  padding: 2% 6%;
+  /* making equal padding around each item vertical */
+  justify-content: space-between;
+  /*items are positioned at the center of the container horisontaly */
+  align-items: center;
 }
