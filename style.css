@@ -4,6 +4,8 @@
   margin: 0;
   /* make padding for all 4 sides 0*/
   padding: 0;
+  /* adding fonts */
+  font-family: "Poppins", sans-serif;
 }
 
 /* Header styling */
@@ -28,7 +30,7 @@
   position: relative;
 }
 nav {
-  /* make container flexible for changes */
+  /* make container flexible for changes  */
   display: flex;
   /* making pading aroung list items (top & bottom 2% and right & left 6%) */
   padding: 2% 6%;
@@ -36,4 +38,55 @@ nav {
   justify-content: space-between;
   /*items are positioned at the center of the container horisontaly */
   align-items: center;
+}
+nav img {
+  /* making size of logo.img */
+  width: 150px;
+}
+.nav-links {
+  /*give permession to elements to increase size depend on amount information that they are contain */
+  flex: 1;
+  /* right text alignment of the list */
+  text-align: right;
+}
+/* making style for menu */
+.nav-links ul li {
+  /* no list style */
+  list-style: none;
+  /* locating element of menu in one line */
+  display: inline-block;
+  /* making padding aroung each item 8px(top & bottom) & 12(left & right) */
+  padding: 8px 12px;
+  /* move another items related each other */
+  position: relative;
+}
+/*  */
+.nav-links ul li a {
+  /* chaning color of the items */
+  color: #fff;
+  /* exclude text decoration (turn off underlining)  */
+  text-decoration: none;
+  /* changing font size */
+  font-size: 13px;
+}
+/*  */
+.nav-links ul li::after {
+  /*  */
+  content: "";
+  /*  */
+  width: 0;
+  /* height of line while hivering */
+  height: 2px;
+  /* color of hoverd line */
+  background: #f44336;
+  /* make a block arond each element */
+  display: block;
+  /* margin between "red lines" equal  */
+  margin: auto;
+  /* the amount of time after what hoverd line makes visible */
+  transition: 0, 5s;
+}
+/*  */
+.nav-links ul li:hover::after {
+  width: 50%;
 }
