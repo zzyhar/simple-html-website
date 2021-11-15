@@ -60,7 +60,7 @@ nav img {
   /* move another items related each other */
   position: relative;
 }
-/*  */
+/* text decoration */
 .nav-links ul li a {
   /* chaning color of the items */
   color: #fff;
@@ -69,11 +69,11 @@ nav img {
   /* changing font size */
   font-size: 13px;
 }
-/*  */
+/* insert some content after the text */
 .nav-links ul li::after {
-  /*  */
+  /*marking that there are wont be any text */
   content: "";
-  /*  */
+  /* the percentage of visible line (hiddne) */
   width: 0;
   /* height of line while hivering */
   height: 2px;
@@ -86,7 +86,62 @@ nav img {
   /* the amount of time after what hoverd line makes visible */
   transition: 0, 5s;
 }
-/*  */
+/* the reaction of item after hovering */
 .nav-links ul li:hover::after {
-  width: 50%;
+  /* line visible */
+  width: 100%;
+}
+.text-box {
+  /* size of box where text located */
+  width: 90%;
+  /* color */
+  color: #fff;
+  /* element removed from usual setting and recive location by sides  */
+  position: absolute;
+  /* 50 precent under from the top */
+  top: 50%;
+  /* 50 percent right to the left side from current position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*text alighment center (horizontaly) */
+  text-align: center;
+}
+.text-box h1 {
+  /* font size*/
+  font-size: 62px;
+}
+.text-box p {
+  /* margin around (top, left, bottom) */
+  margin: 10px 0 40px;
+  /* font size */
+  font-size: 14px;
+  /* color   */
+  color: #fff;
+}
+.hero-btn {
+  /* make text inline */
+  display: inline-block;
+  /* none textdecoration */
+  text-decoration: none;
+  /* color */
+  color: #fff;
+  /* border around the text 1 px */
+  border: 1px solid #fff;
+  /* padding (top & bottom, lest & right) */
+  padding: 12px 34px;
+  /* to make bacground of the text transparent */
+  background: transparent;
+  /*  */
+  position: relative;
+  /* making the view of cursor - pointer */
+  cursor: pointer;
+}
+/* making hovering effect */
+.hero-btn:hover {
+  /* border */
+  border: 1px solid #f44336;
+  /* color while hovering */
+  background: #f44336;
+  /* time while which button changing */
+  transition: 1s;
 }
