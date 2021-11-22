@@ -146,21 +146,400 @@ nav img {
   transition: 1s;
 }
 
+nav .fa {
+  display: none;
+}
+/* Making website more adaptive for mb devices  */
 @media (max-width: 700px) {
+  /* adapting heading */
   .text-box h1 {
     font-size: 20px;
   }
+
   .nav-links ul li {
+    /* element as a block element */
     display: block;
   }
   .nav-links {
+    /* making position independet of other elements */
     position: absolute;
+    /* bacground color of the block */
     background: #f44336;
+    /* the height of the block */
     height: 100vh;
+    /* the  width of the block */
     width: 200px;
+    /* no space between upper block */
     top: 0;
+    /*  no padding from the right */
     right: 0;
+    /* alining text to left side  */
     text-align: left;
+    /* giving layer of the element, the highest position */
     z-index: 2;
+    /* tarnsiton 1s  */
+    transition: 1s;
   }
+  /* styling icons for mobile version */
+  nav .fa {
+    /* making them like block elements  */
+    display: block;
+    /* the color of icons  */
+    color: #fff;
+    /* marging border around this block elements 10px */
+    margin: 10px;
+    /*  */
+    font-size: 22px;
+    /* the styling of the cursor  */
+    cursor: pointer;
+  }
+  /* making background for mobile version menu tha it will be visiable after pressing menu icn */
+  .nav-links ul {
+    /* padding around each item of the mobile list menu */
+    padding: 10px;
+    /* make it invisible */
+    right: -200px;
+  }
+}
+/* adding styling for part of the website that re */
+.course {
+  /* the new part will take 805 of avaliable space */
+  width: 80%;
+  /* browser calculates the margin  */
+  margin: auto;
+  /* text align center */
+  text-align: center;
+  /* the padding from the top 100px */
+  padding-top: 100px;
+}
+/* the stiling for the header */
+h1 {
+  /* font size  */
+  font-size: 36px;
+  /* the font weight */
+  font-weight: 600;
+}
+/* the stiling for the paragraph */
+p {
+  /* color for subtitle */
+  color: #777;
+  /* font size */
+  font-size: 14px;
+  /* font weight */
+  font-weight: 300;
+  /* space between lines */
+  line-height: 22px;
+  /* padding around subtitle  */
+  padding: 10px;
+}
+.row {
+  /* margin from top to privious element */
+  margin-top: 5%;
+  /* make display more avaliable for changes and locate them in proper way */
+  display: flex;
+  /* space betwween column */
+  justify-content: space-between;
+}
+/* styling for colums */
+.course-col {
+  /* space that colum takes 31% of the width */
+  flex-basis: 31%;
+  /* background color of the column */
+  background: #fff3f3;
+  /* rounding */
+  border-radius: 10px;
+  /* marding from the bottom 5% of all height of the page */
+  margin-bottom: 5%;
+  /*paddign around colum-boxes*/
+  padding: 30px;
+  /* include the content, padding, and border, but do not include the margin */
+  box-sizing: border-box;
+  /* transition time */
+  transition: 0.5s;
+}
+/* styling subtitle */
+.h3 {
+  /* aligning text center  */
+  text-align: center;
+  /* font weight */
+  font-weight: 600;
+  /* marfing around top & bottom 10px left & right 0 */
+  margin: 10px 0;
+}
+/* adding hovering effect  */
+.course-col:hover {
+  /* adding shadow effect while hovering */
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+  .row {
+    /* reordering boxes with text into column */
+    flex-direction: column;
+  }
+}
+/* CAMPUS */
+/* styling for part of the site with contain ifformation about campus */
+.campus {
+  /* the area that will be fill wiht information takes only 80% of the all width */
+  width: 80%;
+  /* the margin will be  choosen automaticaly */
+  margin: auto;
+  /* text will be located at the center of the box */
+  text-align: center;
+  /* padding from the previous section 50px */
+  padding-top: 50px;
+}
+/* styling for clomuns (images) */
+.campus-col {
+  /* each element will take 32% of the avaliable space */
+  flex-basis: 32%;
+  /* rounding */
+  border-radius: 10px;
+  /* margin from the bottom 30px */
+  margin-bottom: 30px;
+  /* element will be located related of their parent */
+  position: relative;
+  /* everything that will be owerflowed will be hidden, and the other content will be invisible */
+  overflow: hidden;
+}
+/* settings for objects location and type */
+.campus-col img {
+  /* width of teh  */
+  width: 100%;
+  /* make image like block element */
+  display: block;
+}
+/* styling for img hovering */
+.layer {
+  /* no bacground(invisiable) */
+  background: transparent;
+  /* hight of the hovering zone */
+  height: 100%;
+  /* width  of the hovering zone  */
+  width: 100%;
+  /* not related to any other elements */
+  position: absolute;
+  /*  */
+  top: 0;
+  /*  */
+  left: 0;
+  /* transition time */
+  transition: 0.5s;
+}
+/* hovering effect */
+.layer:hover {
+  /* the color of hovering effect */
+  background: rgba(226, 0, 0, 0.7);
+}
+/* styling for image title  */
+.layer h3 {
+  width: 100%;
+  /* font weight */
+  font-weight: 500;
+  /* color  */
+  color: #fff;
+  /* font size */
+  font-size: 26px;
+  /* make lable hidden */
+  bottom: 0;
+  /*  alignment by center */
+  left: 50%;
+  transform: translateX(-50%);
+  /* position is not related to other elements */
+  position: absolute;
+  /* the prosent of concentration of the text */
+  opacity: 0;
+  /* transition time */
+  transition: 0.5s;
+}
+/* hovering effect for lable of the img */
+.layer:hover h3 {
+  /* posion from the bottom where lable will be located  */
+  bottom: 49%;
+  /* make lable visible */
+  opacity: 1;
+}
+/* -------- facilities -------- */
+
+.facilities {
+  /* the amount of space (witdh)  that is avaliable for pictures */
+  width: 80%;
+  /* auto margin */
+  margin: auto;
+  /* text alighment by center of the box*/
+  text-align: center;
+  /* the amoung of space between previous title */
+  padding-top: 100px;
+}
+/* styling images in columns */
+.facilities-col {
+  /* give 32% of avaliable space of the box for each img */
+  flex-basis: 32%;
+  /* marging from the bottom */
+  margin-bottom: 5%;
+  /* text alignment by left side */
+  text-align: left;
+}
+/* styling of img in this section */
+.facilities-col img {
+  /* giving for each img 100% widht of the box */
+  width: 100%;
+  /* rounding of the img */
+  border-radius: 10px;
+}
+/* padding for paragraph 3 (subtitle)  */
+.facilities-col p {
+  /* no padding around paragraph */
+  padding: 0;
+}
+
+.facilities-col h3 {
+  /* marging from the top */
+  margin-top: 16px;
+  /* margin from the bottom  */
+  margin-bottom: 15px;
+  /* text alignment */
+  text-align: left;
+}
+/* testimonials */
+.testimonials {
+  /* that 80% of space is avaliable */
+  width: 80%;
+  /* margin auto */
+  margin: auto;
+  /* padding from the top 100px */
+  padding-top: 100px;
+  /* text alighment center */
+  text-align: center;
+}
+/* adding general styling for items of the testemonials section  */
+.testimonials-col {
+  /* that each part will take 44% of the space */
+  flex-basis: 44%;
+  /* rounding  */
+  border-radius: 10px;
+  /* margin from the bottow 5% of the space */
+  margin-bottom: 5%;
+  /* text alignment left */
+  text-align: left;
+  /* backgroung color */
+  background: #fff3f3;
+  /* padding around each item */
+  padding: 25px;
+  /* the type of cursor */
+  cursor: pointer;
+  /* giving ability to display to change */
+  display: flex;
+}
+/* styling of testtimonials section */
+.testimonials-col img {
+  /* height of the img  */
+  height: 40px;
+  /* margin from the left */
+  margin-left: 5px;
+  /* margihn from right  */
+  margin-right: 30px;
+  /* making circle  */
+  border-radius: 50%;
+}
+/* styling for paragraph */
+.testimonials-col p {
+  /* no padding */
+  padding: 0;
+}
+/* the styling for subtitle */
+.testimonials-col h3 {
+  /* margin from the top */
+  margin-top: 15px;
+  /* text alignment be the left side */
+  text-align: left;
+}
+/* styling for icns (star) */
+.testimonials-col .fa {
+  /* color */
+  color: #f44336;
+}
+/* making website more adaptive for mobile devices */
+@media (max-width: 700px) {
+  /* styling images*/
+  .testimonials-col img {
+    /* no marging from left side */
+    margin-left: 0px;
+    /* margin from right side */
+    margin-right: 15px;
+  }
+}
+/* CALL TO ACTION */
+/* styling lable of cta section */
+.cta {
+  /* auto margin */
+  margin: auto;
+  /* that 80% of space is avaliable */
+  width: 80%;
+  /* styling of background img */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/banner2.jpg);
+  /* aligning img in visible area */
+  background-position: top;
+  /* to make img for full screen */
+  background-size: cover;
+  /* rounding */
+  border-radius: 10px;
+  /* alignment text by center */
+  text-align: center;
+  /*  */
+  padding: 100px 0;
+}
+/* styling title inside img */
+.cta h1 {
+  /* color */
+  color: #fff;
+  /* margin from the bottom */
+  margin-bottom: 40px;
+  /* я не понимаю зачем это задесь, просто если это убрать то ничего не изменится */
+  /* no padding from the sides where title located  */
+  padding: 0;
+}
+/* amking smaller font size for mobile devices */
+@media (max-width: 700px) {
+  /* stuling title  */
+  .cta h1 {
+    /* font size  */
+    font-size: 24px;
+  }
+}
+/* footer */
+.footer {
+  /* that 100% of space is avaliable */
+  width: 100%;
+  /* text alignment by center of the box */
+  text-align: center;
+  /* padding from top & bottom, no padding by left & right side */
+  padding: 30px 0;
+}
+/* styling title */
+footer h4 {
+  /* margin from bottom */
+  margin-bottom: 25px;
+  /* margin from top */
+  margin-top: 20px;
+  /* font weight  */
+  font-weight: 600;
+}
+/* styling icns */
+.icons .fa {
+  /* color */
+  color: #f44336;
+  /* margin 0 top & bottom , 13 px left & right  */
+  margin: 0 13px;
+  /* style of cursor */
+  cursor: pointer;
+  /* padding 18 top & bottom & 0 left right */
+  padding: 18px 0;
+}
+/* the color of the heart icon */
+.fa-heart-o {
+  /* color of the heart icon */
+  color: #f44336;
 }
