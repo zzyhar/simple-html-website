@@ -635,48 +635,98 @@ footer h4 {
   /* no padding */
   padding: 0;
 }
+/* initialization right column */
 .blog-right {
   flex-basis: 32%;
 }
+/* styling sub-header */
 .blog-right h3 {
+  /* text alighment */
   text-align: center;
+  /* background color */
   background: #f44336;
+  /* color of the text  */
   color: #fff;
+  /* inside padding */
   padding: 7px 0;
+  /* font size */
   font-size: 16px;
+  /* margin to the element which is under */
   margin-bottom: 20px;
 }
+/* styling the inside content */
 .blog-right div {
+  /* make display more flexible */
   display: flex;
+  /* items are positioned be the center of the conteiner  */
   align-items: center;
+  /* meke equal space around each item */
   justify-content: space-between;
+  /* text color */
   color: #555;
+  /* padding around each element */
   padding: 8px;
+  /* alighment by the inside border */
   box-sizing: border-box;
 }
+/* styling for the comment box */
 .comment-box {
+  /* styling for the border of the comment box */
   border: 1px solid #ccc;
+  /* marding */
   margin: 50px 0;
+  /* padding */
   padding: 10px 20px;
 }
+/* styling for the sun title  */
 .comment-box h3 {
+  /* text alighment */
   text-align: left;
 }
+/* styling for the input area and text area */
 .comment-form input,
 .comment-form textarea {
+  /* making box foe the input area */
   width: 100%;
+  /* padding */
   padding: 10px;
+  /* margin */
   margin: 15px 0;
+  /* alighment by the inside of the border  */
   box-sizing: border-box;
+  /*no border  */
   border: none;
+  /* no outline  */
   outline: none;
+  /* background color of the input box */
   background: #f0f0f0;
 }
+/* styling for the button */
 .comment-form button {
+  /* margin aroud the button*/
   margin: 10px 0;
 }
+/* making the sub header smaler for mb version */
 @media (max-width: 700px) {
   .sub-header h1 {
+    /* decreasing font size */
     font-size: 24px;
   }
+}
+/* contac page */
+.location {
+  /* the width 80% */
+  width: 80%;
+  /* auto margin */
+  margin: auto;
+  /* padding*/
+  padding: 80px 10%;
+}
+.location iframe {
+  /* the width */
+  width: 80%;
+}
+.contact-us {
+  width: 80%;
+  margin: auto;
 }

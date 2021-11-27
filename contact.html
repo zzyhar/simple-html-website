@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Line under helps to make website responsive -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- title gat: Gives title for the webpage -->
+    <title>Uniersity website Design -Easy Tutorial</title>
+
+    <!--activating stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- adding fonts for website -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Attaching styling file to the webpage -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header menu -->
+    <section class="sub-header">
+      <!-- Creating stack of navigation links -->
+      <nav>
+        <!--adding image of logo -->
+        <a href="index.html"> <img src="images/logo.png" /></a>
+        <!-- making conteiner for list -->
+        <div class="nav-links" id="navLinks">
+          <!--  initialization of img from chrome -->
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <!-- initialization of list-->
+          <ul>
+            <!-- parts of list and adding hyperlink for them -->
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- initialization of img from chrome   -->
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <!-- adding title -->
+      <h1>Contact Us</h1>
+    </section>
+    <!-- contact us section -->
+    <section class="location">
+      <!-- adding responsive map and location -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.76457543708!2d2.2769955447592856!3d48.
+      8589465807077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis
+      !5e0!3m2!1sen!2sfr!4v1638042143978!5m2!1sen!2sfr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+    <!-- contact us -->
+    <section>
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"> </i>
+            <span>
+              <h5>XYZ Road, ABC Building</h5>
+              <p>Bangalore, Kartateka, PA</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-phone"> </i>
+            <span>
+              <h5>+1 1234567890</h5>
+              <p>Monday to Friday, from 10AM to 6PM</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-envelope-o"> </i>
+            <span>
+              <h5>lolprikol@gmail.com</h5>
+              <p>Bangalore, Kartateka, PA</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Foorer -->
+    <!-- initialization of new section -->
+    <section class="footer">
+      <!-- title  -->
+      <h4>About Us</h4>
+      <!-- paragraph -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti
+        alias laudantium quasi, <br />
+        id deserunt, dolor illo magni harum cum qui quaerat, accusantium ab!
+      </p>
+      <!-- adding icons-->
+      <div class="icons">
+        <i class="fa fa-facebook"> </i>
+        <i class="fa fa-twitter"> </i>
+        <i class="fa fa-instagram"> </i>
+        <i class="fa fa-linkedin"> </i>
+      </div>
+      <!-- adding text and icon -->
+      <p>Made with <i class="fa fa-heart-o"> </i> by Easy Tutorials</p>
+    </section>
+
+    <!-- --------- JavaScript for Toggle Menu ---------          -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
