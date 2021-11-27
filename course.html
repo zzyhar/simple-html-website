@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Line under helps to make website responsive -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- title gat: Gives title for the webpage -->
+    <title>Uniersity website Design -Easy Tutorial</title>
+
+    <!--activating stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- adding fonts for website -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Attaching styling file to the webpage -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header menu -->
+    <section class="sub-header">
+      <!-- Creating stack of navigation links -->
+      <nav>
+        <!--adding image of logo -->
+        <a href="index.html"> <img src="images/logo.png" /></a>
+        <!-- making conteiner for list -->
+        <div class="nav-links" id="navLinks">
+          <!--  initialization of img from chrome -->
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <!-- initialization of list-->
+          <ul>
+            <!-- parts of list and adding hyperlink for them -->
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- initialization of img from chrome   -->
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <!-- adding title -->
+      <h1>About Us</h1>
+    </section>
+      
+    <section class="course"> 
+      <!-- Adding new title for new part of page -->
+      <h1>Courses we Offer</h1>
+      <!--Adding new sub title-->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <!-- initialization new section  -->
+      <div class="row">
+        <!-- adding box with information -->
+        <div class="course-col">
+          <!-- title of the column -->
+          <h3>Intermediate</h3>
+          <!-- subtitle of the column -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            possimus corporis recusandae tempora, commodi ducimus dolor
+            corrupti ratione dolorum, nihil doloremque consequatur, harum
+            pariatur! Repellat ea fugit, incidunt non repellendus quas
+            delectus!
+          </p>
+        </div>
+        <!-- adding box with information -->
+        <div class="course-col">
+          <!-- title of the column -->
+          <h3>Degree</h3>
+          <!-- subtitle of the column -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            possimus corporis recusandae tempora, commodi ducimus dolor
+            corrupti ratione dolorum, nihil doloremque consequatur, harum
+            pariatur! Repellat ea fugit, incidunt non repellendus quas
+            delectus!
+          </p>
+        </div>
+        <!-- adding box with information -->
+        <div class="course-col">
+          <!-- title of the column -->
+          <h3>Post Graduation</h3>
+          <!-- subtitle of the column -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            possimus corporis recusandae tempora, commodi ducimus dolor
+            corrupti ratione dolorum, nihil doloremque consequatur, harum
+            pariatur! Repellat ea fugit, incidunt non repellendus quas
+            delectus!
+          </p>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="facilities">
+    <!-- title -->
+    <h1>Our Facilities</h1>
+    <!-- paragraph -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <!-- initialization that future information will be order in the columns -->
+    <div class="row">
+      <!-- naming class for future changing elements -->
+      <div class="facilities-col">
+        <!-- initialization of the img -->
+        <img src="images/library.png" />
+        <!-- title  -->
+        <h3>World Class Library</h3>
+        <!-- paragraph -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ab
+          similique quae?
+        </p>
+      </div>
+      <!-- naming class for future changing elements -->
+      <div class="facilities-col">
+        <!-- initialization of the img -->
+        <img src="images/basketball.png" />
+        <!-- title  -->
+        <h3>Largest Playground</h3>
+        <!-- paragraph -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ab
+          similique quae?
+        </p>
+      </div>
+      <!-- naming class for future changing elements -->
+      <div class="facilities-col">
+        <!--initialization of the img -->
+        <img src="images/cafeteria.png" />
+        <!-- title  -->
+        <h3>Tasty and Healthy Food</h3>
+        <!-- paragraph -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ab
+          similique quae?
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+    <!-- Foorer -->
+    <!-- initialization of new section -->
+    <section class="footer">
+      <!-- title  -->
+      <h4>About Us</h4>
+      <!-- paragraph -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti
+        alias laudantium quasi, <br />
+        id deserunt, dolor illo magni harum cum qui quaerat, accusantium ab!
+      </p>
+      <!-- adding icons-->
+      <div class="icons">
+        <i class="fa fa-facebook"> </i>
+        <i class="fa fa-twitter"> </i>
+        <i class="fa fa-instagram"> </i>
+        <i class="fa fa-linkedin"> </i>
+      </div>
+      <!-- adding text and icon -->
+      <p>Made with <i class="fa fa-heart-o"> </i> by Easy Tutorials</p>
+    </section>
+
+    <!-- --------- JavaScript for Toggle Menu ---------          -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
