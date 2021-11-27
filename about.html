@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Line under helps to make website responsive -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- title gat: Gives title for the webpage -->
+    <title>Uniersity website Design -Easy Tutorial</title>
+
+    <!--activating stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- adding fonts for website -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Attaching styling file to the webpage -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header menu -->
+    <section class="sub-header">
+      <!-- Creating stack of navigation links -->
+      <nav>
+        <!--adding image of logo -->
+        <a href="index.html"> <img src="images/logo.png" /></a>
+        <!-- making conteiner for list -->
+        <div class="nav-links" id="navLinks">
+          <!--  initialization of img from chrome -->
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <!-- initialization of list-->
+          <ul>
+            <!-- parts of list and adding hyperlink for them -->
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- initialization of img from chrome   -->
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <!-- adding title -->
+      <h1>About Us</h1>
+    </section>
+
+    <!-- About Us content  -->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the World's largest University</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sed
+            atque alias. Perferendis a, fugiat quis ea aperiam at pariatur
+            veniam dolor cum accusamus soluta? Adipisci, saepe odit! Nostrum,
+            nam quo quos totam perferendis maxime omnis maiores deserunt ullam
+            enim.
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="images/about.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Foorer -->
+    <!-- initialization of new section -->
+    <section class="footer">
+      <!-- title  -->
+      <h4>About Us</h4>
+      <!-- paragraph -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti
+        alias laudantium quasi, <br />
+        id deserunt, dolor illo magni harum cum qui quaerat, accusantium ab!
+      </p>
+      <!-- adding icons-->
+      <div class="icons">
+        <i class="fa fa-facebook"> </i>
+        <i class="fa fa-twitter"> </i>
+        <i class="fa fa-instagram"> </i>
+        <i class="fa fa-linkedin"> </i>
+      </div>
+      <!-- adding text and icon -->
+      <p>Made with <i class="fa fa-heart-o"> </i> by Easy Tutorials</p>
+    </section>
+
+    <!-- --------- JavaScript for Toggle Menu ---------          -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

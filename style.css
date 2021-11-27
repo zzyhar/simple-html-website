@@ -543,3 +543,65 @@ footer h4 {
   /* color of the heart icon */
   color: #f44336;
 }
+.sub-header {
+  /* the height */
+  height: 50vh;
+  /* the width */
+  width: 100%;
+  /* initialization of the img */
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/background.jpg);
+  /* the position of the img  */
+  background-position: center;
+  /* to cover backgroung img */
+  background-size: cover;
+  /* text alighment */
+  text-align: center;
+  /* color of the title */
+  color: #fff;
+}
+.sub-header h1 {
+  /* 100px from the top */
+  margin-top: 100px;
+}
+.about-us {
+  /* creating block for future content */
+  width: 80%;
+  /* auto margin  */
+  margin: auto;
+  /* 80 px from the top */
+  padding-top: 80px;
+  /* 50 px from the bottom */
+  padding-bottom: 50px;
+}
+.about-col {
+  /* making 2 columns and give them 40 of space to each */
+  flex-basis: 48%;
+  /* paddign around them */
+  padding: 30px 2px;
+}
+.about-col img {
+  /* img takes all availiable space  */
+  width: 100%;
+}
+.about-col h1 {
+  /* no space between top and title  */
+  padding-top: 0;
+}
+
+.about-col p {
+  /* padding around paragraph  */
+  padding: 15px 0 25px;
+}
+/* styling for button */
+.red-btn {
+  /* border */
+  border: 1px solid #f44336;
+  background: transperent;
+  /* background-color */
+  color: #f44336;
+}
+/* hovering effect */
+.red-btn:hover {
+  color: #fff;
+}
