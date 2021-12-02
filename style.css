@@ -145,7 +145,6 @@ nav img {
   /* time while which button changing */
   transition: 1s;
 }
-
 nav .fa {
   display: none;
 }
@@ -162,7 +161,7 @@ nav .fa {
   }
   .nav-links {
     /* making position independet of other elements */
-    position: absolute;
+    position: fixed;
     /* bacground color of the block */
     background: #f44336;
     /* the height of the block */
@@ -720,25 +719,51 @@ footer h4 {
   margin: auto;
   padding: 80px 0;
 }
+/* styling map */
 .location iframe {
   width: 100%;
 }
+/* making borders for the page */
 .contac-us {
   width: 80%;
   margin: auto;
 }
+/* that the one column will take 48% and there are will be only 2  */
 .contac-col {
   flex-basis: 48%;
   margin-bottom: 30px;
 }
+/* saying that div will be flexible and wil have margin */
 .contac-col div {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
 }
+/* styling icon  */
 .contac-col div .fa {
   font-size: 28px;
   color: #f44336;
   margin: 10px;
   margin-right: 30px;
+}
+/* styling paragraph */
+.contac-col div p {
+  padding: 0;
+}
+/* styling paragraph */
+.contac-col h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+/* styling form */
+.contac-col input,
+.contac-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
