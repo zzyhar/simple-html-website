@@ -13,11 +13,10 @@ $email_body = "User Name: $name.\n".
               "User Subject: $subject.\n".
               "User Message: $message .\n";
 
-$to = 'zigarzahar17@gmail.com';
 $headers = "From: $email_from \r\n"; 
 $headers .= "Reply-To: $visitor_email \r\n"; 
 
-mail($to,$email_subject,$email_body,$headers); 
+mail($visitor_email,$email_subject,$email_body,$headers); 
 
 header("Location: contact.html"); 
               
